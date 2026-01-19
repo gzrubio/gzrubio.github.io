@@ -1,0 +1,49 @@
+# Site settings
+title: Gonzalo Rubio
+description: >-
+  Systems Thinker | Fractional CTO @ bmetric | Founder @ Sotavento Labs
+  Connecting systems, bridging domains, and ensuring technology gets out of the way.
+baseurl: ""
+url: "https://gzrubio.github.io"
+
+# Author
+author:
+  name: Gonzalo Rubio
+  email: ""
+  bio: "I connect systems, bridge domains, and ultimately ensure technology gets out of the way of the users"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

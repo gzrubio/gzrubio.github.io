@@ -1,0 +1,36 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+<section class="blog-page">
+  <div class="container">
+    <h1>Blog</h1>
+
+    {% if site.posts.size > 0 %}
+      <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <article>
+              <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+              {% if post.categories.size > 0 %}
+                <span class="categories">
+                  {% for category in post.categories %}
+                    <span class="category">{{ category }}</span>
+                  {% endfor %}
+                </span>
+              {% endif %}
+              {% if post.excerpt %}
+                <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
+              {% endif %}
+              <a href="{{ post.url | relative_url }}" class="read-more">Read more &rarr;</a>
+            </article>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No posts yet. Check back soon!</p>
+    {% endif %}
+  </div>
+</section>

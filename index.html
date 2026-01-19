@@ -1,0 +1,64 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <div class="container">
+    <h1>Hi! I'm Gonzalo</h1>
+    <div class="intro-code">
+      <pre><code class="language-python">class SystemsThinker:
+    def __init__(self):
+        self.fractional = "CTO @ bmetric"
+        self.role = "Founder @ Sotavento Labs"
+        self.education = "Mathematics and Software Engineering"
+        self.motto = "Don't be evil"</code></pre>
+    </div>
+    <p class="tagline">I connect systems, bridge domains, and ultimately ensure technology gets out of the way of the users</p>
+  </div>
+</section>
+
+<section class="current-work">
+  <div class="container">
+    <h2>What I'm Up To</h2>
+    <p>Building systems that hopefully make the world a better place</p>
+
+    <div class="activities">
+      <div class="activity">
+        <span class="icon">🔬</span>
+        <p>Funneling my obsessions and crazy ideas through projects @ Sotavento Labs</p>
+      </div>
+      <div class="activity">
+        <span class="icon">📡</span>
+        <p>Pursuing my Amateur Radio License</p>
+      </div>
+      <div class="activity">
+        <span class="icon">🏄</span>
+        <p>Riding the AI wave and trying to understand how it will shape the future of computing</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recent-posts">
+  <div class="container">
+    <h2>Recent Posts</h2>
+    {% if site.posts.size > 0 %}
+      <ul class="post-list">
+        {% for post in site.posts limit:5 %}
+          <li>
+            <article>
+              <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+              {% if post.excerpt %}
+                <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+              {% endif %}
+            </article>
+          </li>
+        {% endfor %}
+      </ul>
+      <a href="{{ '/blog/' | relative_url }}" class="view-all">View all posts &rarr;</a>
+    {% else %}
+      <p>No posts yet. Check back soon!</p>
+    {% endif %}
+  </div>
+</section>
