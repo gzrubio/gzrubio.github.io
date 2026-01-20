@@ -3,6 +3,7 @@ layout: post
 title: "Welcome to My Blog"
 date: 2026-01-19
 categories: [general]
+lang: en
 ---
 
 Hello and welcome to my corner of the internet!

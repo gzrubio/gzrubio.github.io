@@ -2,6 +2,8 @@
 layout: page
 title: About
 permalink: /about/
+lang: en
+alternate_url: /about/
 ---
 
 ## About Me

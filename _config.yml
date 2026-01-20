@@ -38,12 +38,37 @@ collections:
 
 # Defaults
 defaults:
+  # English (default)
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+      lang: "en"
   - scope:
       path: ""
     values:
       layout: "default"
+      lang: "en"
+  # Spanish
+  - scope:
+      path: "es"
+    values:
+      lang: "es"
+  - scope:
+      path: "es/_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "es"
+  # Catalan
+  - scope:
+      path: "ca"
+    values:
+      lang: "ca"
+  - scope:
+      path: "ca/_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "ca"

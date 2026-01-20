@@ -1,0 +1,110 @@
+en:
+  # Navigation
+  nav:
+    home: "Home"
+    blog: "Blog"
+    about: "About"
+
+  # Footer
+  footer:
+    motto: "Don't be evil."
+
+  # Homepage
+  home:
+    greeting: "Hi! I'm Gonzalo"
+    tagline: "I connect systems, bridge domains, and ultimately ensure technology gets out of the way of the users"
+    current_work_title: "What I'm Up To"
+    current_work_subtitle: "Using technology to try to make the world a better place"
+    activity_labs: "Funneling my obsessions and crazy ideas through projects @ Sotavento Labs"
+    activity_radio: "Pursuing my Amateur Radio License"
+    activity_ai: "Riding the AI wave and trying to understand how it will shape the future of computing"
+    recent_posts: "Recent Posts"
+    view_all: "View all posts"
+    no_posts: "No posts yet. Check back soon!"
+
+  # Blog
+  blog:
+    title: "Blog"
+    read_more: "Read more"
+    no_posts: "No posts yet. Check back soon!"
+
+  # Post
+  post:
+    in_category: "in"
+
+  # Date formats
+  date_format: "%B %d, %Y"
+
+es:
+  # Navegación
+  nav:
+    home: "Inicio"
+    blog: "Blog"
+    about: "Sobre mí"
+
+  # Pie de página
+  footer:
+    motto: "No seas malvado."
+
+  # Página principal
+  home:
+    greeting: "¡Hola! Soy Gonzalo"
+    tagline: "Conecto sistemas, tiendo puentes entre dominios y, en última instancia, hago que la tecnología no estorbe a los usuarios"
+    current_work_title: "En qué estoy trabajando"
+    current_work_subtitle: "Usando la tecnología para intentar hacer del mundo un lugar mejor"
+    activity_labs: "Canalizando mis obsesiones e ideas locas a través de proyectos en Sotavento Labs"
+    activity_radio: "Obteniendo mi Licencia de Radioaficionado"
+    activity_ai: "Surfeando la ola de la IA e intentando entender cómo moldeará el futuro de la computación"
+    recent_posts: "Publicaciones recientes"
+    view_all: "Ver todas las publicaciones"
+    no_posts: "Aún no hay publicaciones. ¡Vuelve pronto!"
+
+  # Blog
+  blog:
+    title: "Blog"
+    read_more: "Leer más"
+    no_posts: "Aún no hay publicaciones. ¡Vuelve pronto!"
+
+  # Post
+  post:
+    in_category: "en"
+
+  # Formatos de fecha
+  date_format: "%d de %B de %Y"
+
+ca:
+  # Navegació
+  nav:
+    home: "Inici"
+    blog: "Blog"
+    about: "Sobre mi"
+
+  # Peu de pàgina
+  footer:
+    motto: "No siguis dolent."
+
+  # Pàgina principal
+  home:
+    greeting: "Hola! Sóc en Gonzalo"
+    tagline: "Connecto sistemes, faig ponts entre dominis i, en última instància, faig que la tecnologia no destorbi als usuaris"
+    current_work_title: "En què estic treballant"
+    current_work_subtitle: "Utilitzant la tecnologia per intentar fer del món un lloc millor"
+    activity_labs: "Canalitzant les meves obsessions i idees boges a través de projectes a Sotavento Labs"
+    activity_radio: "Obtenint la meva Llicència de Radioaficionat"
+    activity_ai: "Surfejant l'onada de la IA i intentant entendre com modelarà el futur de la computació"
+    recent_posts: "Publicacions recents"
+    view_all: "Veure totes les publicacions"
+    no_posts: "Encara no hi ha publicacions. Torna aviat!"
+
+  # Blog
+  blog:
+    title: "Blog"
+    read_more: "Llegir més"
+    no_posts: "Encara no hi ha publicacions. Torna aviat!"
+
+  # Post
+  post:
+    in_category: "a"
+
+  # Formats de data
+  date_format: "%d de %B de %Y"

@@ -1,0 +1,20 @@
+en:
+  lang: "en"
+  name: "English"
+  flag: "EN"
+  locale: "en_US"
+  baseurl: ""
+
+es:
+  lang: "es"
+  name: "Español"
+  flag: "ES"
+  locale: "es_ES"
+  baseurl: "/es"
+
+ca:
+  lang: "ca"
+  name: "Català"
+  flag: "CA"
+  locale: "ca_ES"
+  baseurl: "/ca"

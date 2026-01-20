@@ -1,5 +1,8 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data.translations[lang] %}
+{% assign locale = site.data.locales[lang] %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +12,40 @@
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   {% feed_meta %}
   {% seo %}
+  {% for loc in site.data.locales %}
+    {% assign loc_lang = loc[0] %}
+    {% if loc_lang != lang %}
+      {% if loc_lang == "en" %}
+        <link rel="alternate" hreflang="{{ loc_lang }}" href="{{ site.url }}{{ page.alternate_url | default: page.url | replace: locale.baseurl, '' }}" />
+      {% else %}
+        <link rel="alternate" hreflang="{{ loc_lang }}" href="{{ site.url }}{{ site.data.locales[loc_lang].baseurl }}{{ page.alternate_url | default: page.url | replace: locale.baseurl, '' }}" />
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 </head>
 <body>
   <nav class="navbar">
     <div class="container">
-      <a href="{{ '/' | relative_url }}" class="nav-brand">{{ site.title }}</a>
+      <a href="{{ locale.baseurl | default: '/' | relative_url }}" class="nav-brand">{{ site.title }}</a>
       <ul class="nav-links">
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{% if lang == 'en' %}{{ '/' | relative_url }}{% else %}{{ locale.baseurl | append: '/' | relative_url }}{% endif %}">{{ t.nav.home }}</a></li>
+        <li><a href="{% if lang == 'en' %}{{ '/blog/' | relative_url }}{% else %}{{ locale.baseurl | append: '/blog/' | relative_url }}{% endif %}">{{ t.nav.blog }}</a></li>
+        <li><a href="{% if lang == 'en' %}{{ '/about/' | relative_url }}{% else %}{{ locale.baseurl | append: '/about/' | relative_url }}{% endif %}">{{ t.nav.about }}</a></li>
+        <li class="lang-switcher">
+          {% for loc in site.data.locales %}
+            {% assign loc_lang = loc[0] %}
+            {% assign loc_data = loc[1] %}
+            {% if loc_lang == lang %}
+              <span class="lang-current">{{ loc_data.flag }}</span>
+            {% else %}
+              {% if loc_lang == "en" %}
+                <a href="{{ page.alternate_url | default: page.url | replace: locale.baseurl, '' | relative_url }}" class="lang-link">{{ loc_data.flag }}</a>
+              {% else %}
+                <a href="{{ loc_data.baseurl }}{{ page.alternate_url | default: page.url | replace: locale.baseurl, '' | relative_url }}" class="lang-link">{{ loc_data.flag }}</a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </li>
       </ul>
     </div>
   </nav>
@@ -28,7 +56,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. Don't be evil.</p>
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. {{ t.footer.motto }}</p>
     </div>
   </footer>
 </body>
