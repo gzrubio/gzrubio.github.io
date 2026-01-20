@@ -8,7 +8,7 @@ permalink: /about/
 
 I'm Gonzalo, a Systems Thinker with a background in Mathematics and Software Engineering.
 
-Currently, I work as a **Fractional CTO at bmetric** and run **Sotavento Labs**, where I funnel my obsessions and crazy ideas into projects.
+Currently, I work as **CTO @ bmetric** and run **Sotavento Labs**, where I funnel my obsessions and crazy ideas into projects.
 
 ### What I Do
 
@@ -16,7 +16,7 @@ I connect systems, bridge domains, and ultimately ensure technology gets out of 
 
 ### Current Interests
 
-- **Sotavento Labs**: Building systems that hopefully make the world a better place
+- **Sotavento Labs**: Funneling my obsessions and crazy ideas through projects
 - **Amateur Radio**: Working towards my license
 - **AI & Computing**: Exploring how artificial intelligence will shape the future
 
@@ -30,4 +30,4 @@ Feel free to reach out if you'd like to collaborate or just chat about systems t
 
 ---
 
-*Building systems that hopefully make the world a better place.*
+*Using technology to try to make the world a better place.*
