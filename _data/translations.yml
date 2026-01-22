@@ -3,6 +3,7 @@ en:
   nav:
     home: "Home"
     blog: "Blog"
+    resume: "Resume"
     about: "About"
 
   # Footer
@@ -40,6 +41,7 @@ es:
   nav:
     home: "Inicio"
     blog: "Blog"
+    resume: "Currículum"
     about: "Sobre mí"
 
   # Pie de página
@@ -77,6 +79,7 @@ ca:
   nav:
     home: "Inici"
     blog: "Blog"
+    resume: "Currículum"
     about: "Sobre mi"
 
   # Peu de pàgina

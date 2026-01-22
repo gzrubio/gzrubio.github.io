@@ -34,6 +34,7 @@
         <li><a href="{% if lang == 'en' %}{{ '/' | relative_url }}{% else %}{{ locale.baseurl | append: '/' | relative_url }}{% endif %}">{{ t.nav.home }}</a></li>
         <li><a href="{% if lang == 'en' %}{{ '/blog/' | relative_url }}{% else %}{{ locale.baseurl | append: '/blog/' | relative_url }}{% endif %}">{{ t.nav.blog }}</a></li>
         <li><a href="{% if lang == 'en' %}{{ '/about/' | relative_url }}{% else %}{{ locale.baseurl | append: '/about/' | relative_url }}{% endif %}">{{ t.nav.about }}</a></li>
+        <li><a href="{% if lang == 'en' %}{{ '/resume/' | relative_url }}{% else %}{{ locale.baseurl | append: '/resume/' | relative_url }}{% endif %}">{{ t.nav.resume }}</a></li>
         <li class="lang-switcher">
           {% for loc in site.data.locales %}
             {% assign loc_lang = loc[0] %}
